@@ -1,0 +1,25 @@
+The deep denoising autoencoder for signal enhancment and representation [1]
+
+Training Step
+Train_Step('TrainPink0dB.list', 'TrainClean.list', 80, [400 400 400], 30);
+argv[1] - Input training noisy speech list
+argv[2] - Input training clean speech list
+argv[3] - Feature dimension 
+argv[4] - DDAE strucutre
+argv[5] - Number of training iterations
+
+Testing Step
+Test_Step ('IntputPink0dB.list','OutPink0dB.list', 'Mel_1_BS5000_PN80000_epoch30_HS400_HS400_HS400_MHINT.mat', [400 400 400], 80);
+argv[1] - Input testing noisy speech list
+argv[2] - Output enhanced speech list
+argv[3] - DDAE model
+argv[4] - DDAE strucutre
+argv[5] - Feature dimension 
+
+
+For detailed information, please contact: 
+Dr. Yu Tsao
+Email: yu.tsao@citi.sinica.edu.tw
+Phone: 886-27872390
+  
+[1] Lu, X., Tsao, Y., Matsuda, S., & Hori, C. (2013, August). Speech enhancement based on deep denoising autoencoder. In INTERSPEECH (pp. 436-440).
